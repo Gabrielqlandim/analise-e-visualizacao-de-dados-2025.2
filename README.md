@@ -1,0 +1,1 @@
+# An-lise-e-Visualiza-o-de-Dados---2025.2.
