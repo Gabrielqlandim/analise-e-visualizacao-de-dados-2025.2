@@ -5,6 +5,15 @@ from sqlalchemy import create_engine
 
 df = pd.read_csv('dados_processados/salgueiro_2024_tratado.csv', parse_dates=["data_hora_utc"])
 
+#aqui é pra so levar ao banco de dados as tabelas que importam pra gente tratar
+df = df[[
+    "data_hora_utc",
+    "temperatura_c",
+    "pressao_mb",
+    "radiacao_kj_m2",
+    "umidade_relativa_pct",
+]]
+
 user = "nenondb"
 password = "neondb_owner"
 host = "pg.neon.tech"
