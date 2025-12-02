@@ -111,7 +111,7 @@ No endpoint POST /Ingest-File, envie o arquivo bruto:
 INMET_NE_PE_A370_SALGUEIRO_01-01-2024_A_31-12-2024.CSV
 Execute e verifique a resposta.
 
-📊 Resultados do Modelo
+Resultados do Modelo
 O modelo usado foi LinearRegression, com as seguintes métricas reais:
 
 MAE: 4.59
