@@ -127,11 +127,17 @@ Esses valores indicam que a regressão linear capturou 72% da variação da Umid
 Estrutura do projeto 
 
 |–– fastapi/ # API de ingestão
+
 |–– notebooks/
+
 |   |–– analise_dados_do_bd.ipynb
+
 |–– Dados_Processados/
+
 |–– docker-compose.yml
+
 |–– tratamento_inmet.py
+
 |–– neonDb_connection.py
 
 Equipe
