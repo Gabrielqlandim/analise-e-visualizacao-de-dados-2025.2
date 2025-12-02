@@ -74,7 +74,7 @@ Contêineres principais:
 ## Como Executar o Pipeline
 
 ### **1. Pré-requisitos**
-## Antes de tudo, execute:
+# Antes de tudo, execute:
 
 docker pull ghcr.io/mlflow/mlflow:v3.6.0
 
@@ -86,7 +86,7 @@ Dependências Python instaladas:
 
 pip install -r requirements.txt
 
-## 2. Comandos utilizados 
+# 2. Comandos utilizados 
 
 python tratamento_inmet.py
 
@@ -96,7 +96,7 @@ docker compose up -d --build
 
 python neonDb_connection.py
 
-## 3. Endereços dos serviços
+# 3. Endereços dos serviços
 
 Serviço	URL
 
@@ -108,7 +108,7 @@ MinIO	http://localhost:9001
 
 MLflow	http://localhost:5000
 
-## 4. Testando a API (Swagger)
+# 4. Testando a API (Swagger)
 
 Acesse:
 
