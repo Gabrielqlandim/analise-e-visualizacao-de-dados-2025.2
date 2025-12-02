@@ -49,5 +49,36 @@ services:
     volumes:
       - ./data:/data:ro
 
+  thingsboard:
+    image: thingsboard/tb-postgres
+    container_name: thingsboard
+    restart: always
+    depends_on:
+      - th-postgres
+    environment:
+      - TB_SETUP=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://th-postgres:5432/thingsboard
+      - SPRING_DATASOURCE_USERNAME=thingsboard
+      - SPRING_DATASOURCE_PASSWORD=thingsboard
+    ports:
+      - "8080:8080"
+      - "1883:1883"
+      - "5683:5683/udp"
+    volumes:
+      - tb-data:/data
+      - tb-logs:/var/log/thingsboard
+
+  th-postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: thingsboard
+      POSTGRES_USER: thingsboard
+      POSTGRES_PASSWORD: thingsboard
+    volumes:
+      - tb-postgres-data:/var/lib/postgresql/data
+
 volumes:
   minio_data:
+  tb-postgres-data:
+  tb-data:
+  tb-logs:
