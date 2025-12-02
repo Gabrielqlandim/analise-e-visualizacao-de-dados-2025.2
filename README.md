@@ -89,19 +89,29 @@ pip install -r requirements.txt
 2. Comandos utilizados 
 
 python tratamento_inmet.py
+
 docker compose logs fastapi
+
 docker compose up -d --build
+
 python neonDb_connection.py
 
 3. Endereços dos serviços
+
 Serviço	URL
+
 FastAPI	http://localhost:8000
+
 Swagger	http://localhost:8000/docs
+
 MinIO	http://localhost:9001
+
 MLflow	http://localhost:5000
 
 4. Testando a API (Swagger)
+
 Acesse:
+
 ➜ http://localhost:8000/docs
 
 Clique em Try it Out → Execute
@@ -109,9 +119,11 @@ Clique em Try it Out → Execute
 No endpoint POST /Ingest-File, envie o arquivo bruto:
 
 INMET_NE_PE_A370_SALGUEIRO_01-01-2024_A_31-12-2024.CSV
+
 Execute e verifique a resposta.
 
 Resultados do Modelo
+
 O modelo usado foi LinearRegression, com as seguintes métricas reais:
 
 MAE: 4.59
@@ -124,7 +136,7 @@ R²: 0.72
 
 Esses valores indicam que a regressão linear capturou 72% da variação da Umidade Relativa na estação de Salgueiro.
 
-Estrutura do projeto 
+*Estrutura do projeto* 
 
 |–– fastapi/ # API de ingestão
 
@@ -140,7 +152,8 @@ Estrutura do projeto
 
 |–– neonDb_connection.py
 
-Equipe
+*Equipe*
+
 Felipe Matias
 
 Felipe França
