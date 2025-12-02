@@ -10,7 +10,7 @@ A variável prevista é a **Umidade Relativa (%)** da estação automática de *
 
 ---
 
-## 📌 Objetivos do Projeto
+## Objetivos do Projeto
 
 - Construir um pipeline completo de ponta a ponta usando Docker e serviços distribuídos.  
 - Ingerir arquivos CSV do INMET por meio de uma API FastAPI.  
@@ -22,7 +22,7 @@ A variável prevista é a **Umidade Relativa (%)** da estação automática de *
 
 ---
 
-## 🧱 Arquitetura Geral do Pipeline
+## Arquitetura Geral do Pipeline
 
 O pipeline é composto pelos seguintes módulos:
 
@@ -71,7 +71,7 @@ Contêineres principais:
 
 ---
 
-## 🔧 Como Executar o Pipeline
+## Como Executar o Pipeline
 
 ### **1. Pré-requisitos**
 Antes de tudo, execute:
@@ -124,17 +124,17 @@ R²: 0.72
 
 Esses valores indicam que a regressão linear capturou 72% da variação da Umidade Relativa na estação de Salgueiro.
 
-📁 Estrutura do Repositório
-/
-├── fastapi/                    # API de ingestão
-├── notebooks/
-│   └── analise_dados_do_bd.ipynb
-├── Dados_Processados/
-├── docker-compose.yml
-├── tratamento_inmet.py
-├── neonDb_connection.py
-└── README.md  ← (este arquivo)
-🧠 Equipe
+Estrutura do projeto 
+
+|–– fastapi/ # API de ingestão
+|–– notebooks/
+|   |–– analise_dados_do_bd.ipynb
+|–– Dados_Processados/
+|–– docker-compose.yml
+|–– tratamento_inmet.py
+|–– neonDb_connection.py
+
+Equipe
 Felipe Matias
 
 Felipe França
