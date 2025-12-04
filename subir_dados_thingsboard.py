@@ -114,4 +114,4 @@ def send_inmet_csv_to_thingsboard(csv_path: str, thingsboard_url: str, token: st
         "arquivo": csv_path,
     }
 
-print(send_inmet_csv_to_thingsboard("data\INMET_NE_PE_A370_SALGUEIRO_01-01-2024_A_31-12-2024.CSV", "http://localhost:8080/", "T2_TEST_TOKEN"))
+print(send_inmet_csv_to_thingsboard("data/INMET_NE_PE_A370_SALGUEIRO_01-01-2024_A_31-12-2024.CSV", "http://localhost:8080/", "T2_TEST_TOKEN"))
