@@ -154,13 +154,13 @@ Esses valores indicam que a regressão linear capturou 72% da variação da Umid
 
 Felipe Matias [Zibec](https://github.com/Zibec)
 
-Felipe França
+Felipe França [FelipeARFranca](https://github.com/FelipeARFranca)
 
-Gabriel Landim
+Gabriel Landim [Gabrielqlandim](https://github.com/Gabrielqlandim)
 
-Lucas Ferreira
+Lucas Ferreira [seconds4decay](https://github.com/seconds4decay)
 
-Pedro Sampaio
+Pedro Sampaio [PedrooSam](https://github.com/PedrooSam)
 
-Luis Gustavo
+Luis Gustavo [Luis-Gustavo-Melo](https://github.com/Luis-Gustavo-Melo)
 
