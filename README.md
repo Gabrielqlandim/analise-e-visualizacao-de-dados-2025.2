@@ -156,6 +156,19 @@ MinIO	http://localhost:9001
 
 MLflow	http://localhost:5000
 
+Credenciais de acesso
+MinIO
+
+Login: minioadmin
+
+Senha: minioadmin
+
+ThingsBoard / Trendz
+
+Username: sysadmin@thingsboard.org
+
+Password: sysadmin
+
 ### 3. Testando a API (Swagger)
 
 Acesse:
@@ -187,8 +200,6 @@ Espera-se uma nova entrada do log gerado pelo script da última célula do noteb
 Verifique se uma nova entrada de artefatos foi gerada no bucket do MinIO:
 
 Acesse http://localhost:9001
-
-Login: minioadmin; Senha: minioadmin
 
 Abra o bucket "mlflow" e procure o artefato gerado.
 
