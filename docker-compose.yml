@@ -78,10 +78,41 @@ services:
     networks:
       - app_network
 
+  trendz:
+    restart: always
+    image: "thingsboard/trendz:1.14.0"
+    container_name: trendz
+    depends_on:
+      - postgres
+      - thingsboard
+    ports:
+      - "8888:8888"
+    environment:
+      TB_API_URL: http://thingsboard:8080
+
+      # LICENÇA – trocar pelo secret obtido no site do Trendz (trial)
+      TRENDZ_LICENSE_SECRET: qE6qu96aIaszIcjbJK7ytWuf
+      TRENDZ_LICENSE_INSTANCE_DATA_FILE: /data/license.data
+
+      # Conexão com o Postgres (DB "trendz" você cria via psql)
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/trendz
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+
+      # NOVO: chave de assinatura JWT – copiar do ThingsBoard (System Admin → Security)
+      JWT_TOKEN_SIGNING_KEY: dHNyQzZ6aDVLWjJpeWdCUXZNN0tMWmtraVpJb3ZidGc0ejFCUGtoUlFkNW5uV2hqWU4wd000b3kyWWRCUTRvSA
+    volumes:
+      - trendz-data:/data
+    
+    networks:
+      - app_network
+  
 volumes:
   minio_data:
   postgresdata:
     name: tb-postgres-data
+    driver: local
+  trendz-data:
     driver: local
 
 networks:
