@@ -152,7 +152,7 @@ Esses valores indicam que a regressão linear capturou 72% da variação da Umid
 
 ## **Equipe**
 
-Felipe Matias
+Felipe Matias @zibec
 
 Felipe França
 
